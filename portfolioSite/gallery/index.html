@@ -8,20 +8,32 @@
   <!-- Upper Gallery, main show case, title, etc -->
   <div id="gallery-upper">
     <!-- Separate side bar arrows from inner content -->
-    <div class="left-panel" id="upper-left-arrow">left</div>
+    <div class="left-panel" id="upper-left-arrow">
+      <!-- Left Arrow SVG -->
+      <svg height="152" width="32" id="left-arrow-svg">
+        <line x1="30" y1="0" x2="1" y2="75" stroke="#5E5E5E"  stroke-width="2" stroke-linecap="square" />
+        <line x1="0" y1="75" x2="30" y2="150" stroke="#5E5E5E"  stroke-width="2" stroke-linecap="square" />
+      </svg>
+    </div>
     <div id="showcase-image" class="center-panel">
       <img src="mabel_doge.jpg" />
     </div>
-    <div class="right-panel" id="upper-right-arrow">right</div>
+    <div class="right-panel" id="upper-right-arrow">
+      <!-- Right Arrow SVG -->
+      <svg height="152" width="32" id="right-arrow-svg">
+        <line x1="0" y1="0" x2="30" y2="75" stroke="#5E5E5E" stroke-width="2" stroke-linecap="square" />
+        <line x1="30" y1="75" x2="0" y2="150" stroke="#5E5E5E"  stroke-width="2" stroke-linecap="square" />
+      </svg>
+    </div>
   </div>
   <!-- Gallery Middle, image description, thats about it -->
   <div id="gallery-middle">
-    <div class="left-panel">one</div>
+    <div class="left-panel"></div>
     <div class="center-panel" id="image-description-text">
       <!-- Image Description -->
-      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru</span>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostruLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboris nostru</span>
     </div>
-    <div class="right-panel">three</div>
+    <div class="right-panel"></div>
   </div>
   <!-- Lower Gallery, image selction and quick previews -->
   <div id="gallery-lower">

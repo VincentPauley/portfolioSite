@@ -14,20 +14,30 @@
   min-height: 300px;
   height: 800px;
   width: 100%;
-  border: 1px solid blue;
+}
+
+/* position the svg arrows */
+#right-arrow-svg, #left-arrow-svg {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40%;
+
+}
+
+line {
+  opacity: 50%;
 }
 
 /* lower group, image selection */
 #gallery-lower {
-  margin-top: 10px;
   height: 200px;
   width: 100%;
-  border: 1px solid blue;
 }
 
 /* showcase image wrapper */
 #showcase-image {
-  padding: 20px;
+  padding: 10px;
 }
 
 /* showcase image */
@@ -60,7 +70,7 @@
 }
 .center-panel {
   width: 70%;
-  background-color: #0A0A0A;
+  background-color: #0F0F0F;
 }
 .right-panel {
   width: 15%;
