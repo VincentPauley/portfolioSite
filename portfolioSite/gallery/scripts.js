@@ -6,22 +6,35 @@ $('#gallery-upper').css('height', desiredHeight);
 
 var imageCollection = [
   {
-    'name' : 'one'
+    'name' : 'one',
+    'imageLocation' : 'images/csod_internal.jpg'
   },
   {
-    'name' : 'two'
+    'name' : 'two',
+    'imageLocation' : 'images/initech.jpg'
   },
   {
-    'name' : 'three'
+    'name' : 'three',
+    'imageLocation' : 'images/cross-enterprises_full.jpg'
   },
   {
-    'name' : 'four'
+    'name' : 'four',
+    'imageLocation' : 'images/connect.png'
   }
 ];
 
-/* Controller logic that handles indexin for image display */
+/* Controller logic that handles indexin for image display, designed to handle the length of the array (no need to hard code anything)
+
+!! -> add arrow keys to the controller as well */
 var currentImageView = 0;
 var nextImage = imageCollection[currentImageView];
+
+function updateImage() {
+  $('#showcase-image-element').attr({
+    src: imageCollection[currentImageView].imageLocation,
+    alt: "jQuery Logo"
+  });
+}
 
 // click handlers for arrow keys
 $('#upper-right-arrow').on('click', function() {
@@ -33,7 +46,7 @@ $('#upper-right-arrow').on('click', function() {
     currentImageView = 0;
     nextImage = imageCollection[currentImageView].name;
   }
-  alert(nextImage);
+  updateImage();
 });
 $('#upper-left-arrow').on('click', function() {
   // make sure the index exists within the array and loop through if needed
@@ -44,8 +57,10 @@ $('#upper-left-arrow').on('click', function() {
     currentImageView -= 1;
     nextImage = imageCollection[currentImageView].name;
   }
-  alert(nextImage);
+  updateImage();
 }); /* End indexing controller */
+
+
 
 
 /* Sets height of the middle divs, after getting the height of the div containing the description text (accounts for the padding of that div as well)*/
@@ -55,7 +70,14 @@ function calculateMiddleProportions() {
 }
 
 
-calculateMiddleProportions();
+// define and call initialize stuff
+
+function init() {
+  calculateMiddleProportions();
+  updateImage();
+}
+
+init();
 
 /* EVENT LISTENERS */
 
