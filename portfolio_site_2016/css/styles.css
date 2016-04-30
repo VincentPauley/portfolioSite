@@ -1,0 +1,167 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.jumbotron {
+  border-radius: 0px !important;
+  height: 450px;
+  padding: none;
+  overflow:hidden;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+#introTab {
+  background-color: black;
+  opacity: .8;
+  padding: 80px 40px;
+  color: #CDCDCD;
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+}
+#custom-jumbotron {
+  background: linear-gradient(135deg, #E5BC3B, white);
+  padding: 0px;
+}
+p {
+  text-indent: 30px;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 16px !important;
+  color: #616161;
+}
+.navbar-brand {
+  color:white !important;
+}
+.custom-footer {
+  background-color: #05E9FF;
+}
+/* Skill Picture Stuff */
+.skillset-picture-circle {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  /* -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000; */
+  box-shadow:         inset 0 2px 5px #4F4F4F;
+}
+#design-micro-image {
+  background-image: url("../images/design_logo.png");
+  background-repeat: no-repeat;
+  background-position: -20px;
+}
+#javascript-micro-image {
+  background-image: url("../images/javascript_logo.png");
+  background-repeat: no-repeat;
+  background-position: -20px;
+}
+h2 {
+  text-align: center;
+}
+hr {
+  color: #A8A8A8;
+}
+#pageHeader {
+  color: white;
+  font-size: 36px;
+}
+#navigation-bar {
+  background-color: black;
+}
+/* Fighter Jets */
+#first-fighter-jet {
+  height: 500px;
+  width: 500px;
+  float: right;
+  fill: #FFF;
+  position: relative;
+  top: 200;
+}
+#second-fighter-jet {
+  height: 300px;
+  width: 300px;
+  float: right;
+  fill: #FFF;
+  opacity: .5;
+}
+#third-fighter-jet {
+  height: 300px;
+  width: 300px;
+  float: right;
+  fill: #FFF;
+  opacity: .5;
+}
+#headline {
+  color: white;
+  margin-top: 20px;
+}
+#title-name{
+  text-shadow: 1px 1px #8B814C;
+}
+#headline-summary {
+  background-color: #000000;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+#headline-summary > p {
+  color: #E5E5E5;
+}
+#headline-summary-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 0 37px;
+  border-color: transparent transparent transparent #000000;
+  margin-left: 40px;
+}
+a {
+  transition: color 0.7s;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!! News Panel Stuff !!!!!!!!!!!!!!!!!!!!!!! */
+
+/* Panel Wrapper */
+.news-panel-wrapper {
+  border: 1px solid white;
+  border-radius: 6px;
+  transition: border 0.5s;
+  padding: 10px;
+  margin-bottom: 14px;
+}
+
+/* News Panel */
+.news-panel {
+  width: 280px;
+  /* border: 1px solid black; */
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  padding: 10px;
+}
+.news-fade {
+  height: 50px;
+  position: relative;
+  transition: opacity .5s;
+  background: linear-gradient(to bottom,rgba(255,0,0,0), white);
+  bottom: 40px; /* height of div minus height of fade */
+}
+/* Panel Button */
+.read-more-button {
+  color: #05E9FF;
+  background-color: white;
+  border: 1px solid #05E9FF;
+  padding: 6px;
+  border-radius: 6px;
+  margin-top: 6px;
+  outline: none;
+  transition: background-color 0.5s;
+}
+
+.read-more-button:hover {
+  background-color: #05E9FF;
+  color: white;
+}

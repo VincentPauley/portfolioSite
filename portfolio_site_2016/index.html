@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vincent Pauley</title>
+    <!-- Responsive settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!--nav bar start -->
+  <div id="navigation-bar" class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <!-- Mobile Menu Button -->
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Desktop size options -->
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Web Page Gallery</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">External Links <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://jsfiddle.net/user/VincentPauley/fiddles/" target="_blank">JS Fiddle</a></li>
+              <li><a href="https://github.com/VincentPauley" target="_blank">Git Hub</a></li>
+              <li><a href="https://www.linkedin.com/in/vincent-pauley-5a971b82" target="_blank">Linkedin</a></li>
+              <li><a href="https://www.facebook.com/vinnie.pauley?ref=br_rs" target="_blank">Facebook</a></li>
+              <li><a href="#">trace</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Paintings</a></li>
+          <li><a href="#">Miscelaneous</a></li>
+          <li><a href="#">Photography</a></li>
+        </ul>
+      </div>
+    </div>
+  </div><!-- End Nav -->
+
+  <div id="custom-jumbotron" class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Header and Quick Summary -->
+          <div id="headline">
+            <h1 id="title-name">Vincent Pauley</h1>
+            <div id="headline-summary-arrow"></div>
+            <div id="headline-summary">
+              <p>A talented web developer with a passion for Javascript and the growing frameworks/technologies that surround the language.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Fighter Jet -->
+          <object id="first-fighter-jet" data="fighter-jet.svg" type="image/svg+xml"></object>
+          <object id="second-fighter-jet" data="fighter-jet.svg" type="image/svg+xml"></object>
+          <object id="third-fighter-jet" data="fighter-jet.svg" type="image/svg+xml"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr></hr>
+  <div class="container">
+    <!-- Skillset Explanations -->
+    <div class="row">
+      <div class="col-md-3 news-panel-wrapper">
+        <div class="news-panel">
+          <h2>Front End Web</h2>
+          <div class="skillset-picture-circle"></div>
+          <p>After teaching myself to code HTML and CSS I landed my first job as a front-end developer at Cornerstone OnDemand in 2014.  My responsibilites included slicing PSD files that I or other colleagues had created, and then turning the media into responsive HTML &amp; CSS.</p>
+          <p>My work on the front end has continued throughout my career as I transitioned into javascript development.  I consider Javascript my core programming language and I obsessively continue developing my skillset in this language.</p>
+        </div>
+      </div>
+      <div class="col-md-3 news-panel-wrapper">
+        <div class="news-panel">
+          <h2>JavaScript</h2>
+          <div  id="javascript-micro-image" class="skillset-picture-circle"></div>
+          <p>Obviously javascript is part of my font-end skillset, but my diverse experience with the language deserves a bit more explanation.  I have been working with javascript since 2012 and have built a strong knowledge of its advanced concepts, including the language's unique take on object-oriented programming.</p>
+          <p>In addition to my experience with libraies like jQuery &amp; Angular, I have studied the back-end capabilities of the language like NodeJS.  As my experience with javascript builds I find that list of programming tasks that cannot be solved with javascript is an ever-shrinking list.  Below is a list of some common tasks I solve with javascript on a day-to-day basis.</p>
+          <ul>
+            <li>making API calls with Ajax</li>
+            <li>looping through API returns</li>
+            <li>jQuery Animations</li>
+            <li>coding business logic</li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 news-panel-wrapper">
+        <div class="news-panel">
+          <h2>Design</h2>
+          <div id="design-micro-image" class="skillset-picture-circle"></div>
+          <p>The oldest of my disiplines is certainly design.  I always had a talent for 2D based design (especially drawing/painting), after completing my Art Major and becoming practiced with the Adobe suite I was able to translate my talents into web pages by mastering HTML &amp; CSS.  Part of what draws me to programming and web-based design is the maticulous level of control a developer has over their work, a control that is often desired within traditional medias like paint.</p>
+          <p>My experience with traditional art has come through in my software projects.  After countless critiques of my drawings and paintings I gained an ability to step outside of my work anonymously and observe it as though it was my first time seeing it.  This gives me a unique and practical approach to page layout.</p>
+        </div>
+      </div>
+      <div class="col-md-3 news-panel-wrapper">
+        <div class="news-panel">
+          <h2>Back End &amp; DBs</h2>
+          <div class="skillset-picture-circle"></div>
+          <p>I have experience working with SQL queries in a production environment, full CRUD operations.  But when it comes to databases my preference is Mongo DB.  The ability to quickly create document-based collections and shard data across servers is invaluable, not to mention the ability to view data in a JSON format as opposed to the classic SQL table structure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="navbar navbar-default navbar-static-bottom custom-footer">
+    <div class="container">
+      <p class="navbar-text pull-left">Site built by Vincent Pauley</p>
+      <a class="navbar-btn  btn btn-default pull-right">Download Resume</a>
+    </div>
+  </div><!-- End Foot -->
+
+
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
