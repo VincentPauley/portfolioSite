@@ -1,15 +1,11 @@
 
-/* Add images and descriptions as JSON objects in this array, the following code handles everything else*/
-var images = [
-  {'imageLocation' : 'images/cross-enterprises_full.jpg',
-   'descriptionText' : 'This page was designed as a demonstration to clients as to what was possible to create in the Cornerstone system. For confidentiality reasons I cannot share actual client pages but this page shows many of the design principles used during my time as an independent contractor.'},
-  {'imageLocation' : 'images/csod_internal.jpg',
-   'descriptionText' : 'I designed this layout to simplify a congested page that had been present within a web environment for years. The simple colors and graphics hold true to the branding guidelines for this particular company, and help ease the task of navigation.'},
-  {'imageLocation' : 'images/initech.jpg',
-   'descriptionText' : 'This page was designed as a demonstration to clients as to what was possible to create in the Cornerstone system. For confidentiality reasons I cannot share actual client pages but this page shows many of the design principles I used during my time as an independent contractor.'},
-  {'imageLocation' : 'images/connect.png',
-   'descriptionText' : 'This Mock-up was designed for a client who wanted to take advantage of new and complicated features within the system we were using. Considerable knowledge of coding and patience was needed in order to create this page within the system. Keep in mind that certain information has been blurred for confidentiality purposes.'}
-];
+/* HOW TO USE:
+
+define image locations and descriptions as an array of JSON objects within the head of the html document.  This file should then be called as the source of a script tag, it will read the JSON data from the HTML page and take care of all the gallery's functionality
+
+- enjoy
+
+*/
 
 var currentIndex = 0;
 
@@ -118,6 +114,8 @@ function updateText() {
     descriptionText.html(images[currentIndex].descriptionText);
   }, 250);
 }
+
+// alert(teams[1].name);
 
 // INIT
 initializeGallery();
