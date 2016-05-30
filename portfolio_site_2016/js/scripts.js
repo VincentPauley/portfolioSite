@@ -58,3 +58,20 @@ setInterval(function() {
   back();
   left();
 }, 0);
+
+/* Holly Easter Egg */
+$('#lovely-lady').on('mouseover', function() {
+  $('#holly-wrapper').css('visibility' , 'visible');
+
+  var hollySize = 200;
+
+  function increaseHolly() {
+    $('#holly-wrapper').css('width', (hollySize + 1) + 'px');
+    hollySize += 1;
+    if(hollySize > 500) {
+      clearInterval(hollyInt);
+    $('#holly-wrapper').css({'visibility' : 'hidden', 'display' : 'none'});
+    }
+  }
+  var hollyInt = setInterval(increaseHolly, 10);
+});

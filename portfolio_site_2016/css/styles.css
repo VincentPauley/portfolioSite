@@ -175,10 +175,33 @@ a {
 #about-section p {
   color: #C0C0C0;
 }
+/* special holly thing */
+#lovely-lady {
+  color: white;
+}
+#holly-wrapper {
+  width: 200px;
+  border: 3px solid #FFF;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  visibility: hidden;
+}
+#holly-wrapper img {
+  width: 100%;
+  height: auto;
+}
+.flash {
+  border: 3px solid #000;
+}
+
+/* My Picture */
 #profile-wrapper {
   display: inline-block;
-  border: 3px solid white;
+  border: 3px solid #C0C0C0;
   max-width: 240px;
+  margin: 20px 0px;
 }
 #picture-of-me {
   max-width: 100%;
@@ -188,6 +211,6 @@ a {
 .custom-footer {
   background-color: #05E9FF;
 }
-.custom-footer p {
-  color: #000;
+#take-credit {
+  color: black;
 }
