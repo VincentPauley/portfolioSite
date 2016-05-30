@@ -33,9 +33,7 @@ p {
 .navbar-brand {
   color:white !important;
 }
-.custom-footer {
-  background-color: #05E9FF;
-}
+
 /* Skill Picture Stuff */
 .skillset-picture-circle {
   height: 100px;
@@ -164,4 +162,32 @@ a {
 .read-more-button:hover {
   background-color: #05E9FF;
   color: white;
+}
+
+/* About section */
+#about-section {
+  background-color: #000;
+}
+#about-section h2 {
+  text-align: left;
+  color: #FFF;
+}
+#about-section p {
+  color: #C0C0C0;
+}
+#profile-wrapper {
+  display: inline-block;
+  border: 3px solid white;
+  max-width: 240px;
+}
+#picture-of-me {
+  max-width: 100%;
+}
+
+/* Footer */
+.custom-footer {
+  background-color: #05E9FF;
+}
+.custom-footer p {
+  color: #000;
 }
