@@ -136,13 +136,38 @@ a {
   background-color: #05E9FF;
   color: white;
 }
+/* Skill Image Section */
+#skill-bar-wrapper {
+  height: 90px;
+  margin: 10px;
+}
+#skill-pic-wrapper {
+  height: 100%;
+  max-width: 1140px;
+  margin: auto;
+  text-align: center;
+}
+#skill-pic-wrapper > div {
+  height: 100%;
+  width: 70px;
+  display: inline-block;
+  text-align: center;
+  color: black;
+  margin: 0px 4px;
+}
+.pic-holder {
+  height: 70px;
+  background-color: #FFF;
+}
 
 /* About section */
 #about-section {
   background-color: #000;
+  padding: 20px 0px 20px 0px;
 }
 #about-section h2 {
   text-align: left;
+  font-family: cuprum;
   color: #FFF;
 }
 #about-section p {
