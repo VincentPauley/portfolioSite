@@ -59,6 +59,7 @@ setInterval(function() {
   left();
 }, 0);
 
+
 /* Holly Easter Egg */
 $('#lovely-lady').on('mouseover', function() {
   $('#holly-wrapper').css('visibility' , 'visible');
